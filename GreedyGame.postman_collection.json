@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "c8f50eee-483c-49eb-93ef-6cba2d8ad96b",
+		"name": "GreedyGame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert-US-mobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert-IN-tablet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert-AF-desktop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-IN-tablet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-mobile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query-IN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dim",
+							"value": "[{\"key\": \"device\", \"val\":\"tablet\"}, {\"key\":\"country\", \"val\":\"IN\"}]",
+							"type": "text"
+						},
+						{
+							"key": "metrics",
+							"value": "[{\"key\":\"webreq\",\"val\":\"80\"},{\"key\":\"timespent\",\"val\":\"30\"}]",
+							"type": "text",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/v1/query",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"v1",
+						"query"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "data is oil",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
