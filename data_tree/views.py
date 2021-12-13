@@ -11,8 +11,17 @@ from data_tree.models import Country, Device, Metrics
 def insert(request):
 
     data = request.POST
-    dims = json.loads(data.get("dim", None))
-    metrics = json.loads(data.get("metrics", None))
+    dims = data.get("dim", None)
+    if not dims:
+        response = {"status": "error", "data": "Must Provide Dimensions"}
+        return JsonResponse(response, status=400)
+    dims = json.loads(dims)
+
+    metrics = data.get("metrics", None)
+    if not metrics:
+        response = {"status": "error", "data": "Must Provide Metrics"}
+        return JsonResponse(response, status=400)
+    metrics = json.loads(metrics)
 
     country = None
     device = None
@@ -81,11 +90,12 @@ def insert(request):
 @csrf_exempt
 def query(request):
     data = request.POST
-    dims = json.loads(data.get('dim', None))
+    dims = data.get('dim', None)
 
     if not dims:
         return JsonResponse({"status": "error", "data": "Must provide either Country or Device or Both"},
                             status=400)
+    dims = json.loads(dims)
 
     country = None
     device = None
